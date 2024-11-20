@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuTiendaOnline</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>Tienda de Kpop</h1>
+        </div>
+        <nav class="nav">
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#ImagenGrupo"> Grupo del momento</a></li>
+            <li><a href="#Productos">Productos</a></li>
+            <li><a href="#Datos">Datos de contacto</a></li>
+            <li><a href="#Comentarios">Comentarios</a></li>
+            <a href="login.html" class="btn-primary" id="btnlogin">Cerra sesión </a>
+        </nav>
+    </header>
+
+    <section id="Inicio" class="Inicio">
+        <h2>Sobre Nosotros</h2>
+        <p>Soy Elizabeth Gamba, Encargada de comercializar
+         la mercancia de Kpop, este espacio es para encontrar
+         todo lo que necesitas de tu grupo de kpop favorito, 
+         albumnes, lightstick, camisetas, gorras, photocard y 
+         mucho mas. 
+        </p>
+     </section> 
+
+     <section id="ImagenGrupo" class="Imagen">
+        <h2>Grupo del momento</h2>
+        <p>Te presentamos los grupos mas populares del momento</p>
+        <h3>StrayKids</h3>
+        <img src="img/skz.jpg" alt="StrayKids">
+        <h3>Blackpink</h3>
+        <img src="img/bp.jpeg" alt="Blackpink">
+        <h3>BTS</h3>
+        <img src="img/bts.jpeg" alt="BTS">
+    </section>
+
+    <section id="Productos" class="Productos">
+        <h2>Productos aquí!!</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidades disponibles</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Álbum SKZ: In Life</td>
+                    <td>$170.000</td>
+                    <td>125</td>
+                    <td><button class="add-to-cart" data-product="Álbum SKZ: In Life" data-price="170000">Agregar</button></td>
+                </tr>
+                <tr>
+                    <td>Álbum SKZ: Thunderous</td>
+                    <td>$320.000</td>
+                    <td>55</td>
+                    <td><button class="add-to-cart" data-product="Álbum SKZ: Thunderous" data-price="320000">Agregar</button></td>
+                </tr>
+                <tr>
+                    <td>Álbum Blackpink: Pink</td>
+                    <td>$163.800</td>
+                    <td>125</td>
+                    <td><button class="add-to-cart" data-product="Álbum Blackpink: Pink" data-price="163800">Agregar</button></td>
+                </tr>
+                <tr>
+                    <td>Paquete de Photocards BTS, SKZ, BP</td>
+                    <td>$20.000</td>
+                    <td>500</td>
+                    <td><button class="add-to-cart" data-product="Paquete de Photocards BTS, SKZ, BP" data-price="20000">Agregar</button></td>
+                </tr>
+                <tr>
+                    <td>Álbum BTS</td>
+                    <td>$500.000</td>
+                    <td>230</td>
+                    <td><button class="add-to-cart" data-product="Álbum BTS" data-price="500000">Agregar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="Carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <table border="1" id="cart-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+        <p id="cart-total">Total: $0</p>
+    </section>
+    
+
+    <section id="Datos" class="contacto">   
+        <h2>Datos de contacto</h2>
+        <p>
+          Encargada: Elizabeth Gamba <br>
+          Número de contacto: 3156789876 <br>
+          Correo electronico: Elizabeth.gamba@email.com <br>
+        </p>
+      </section>  
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Ofertas Exclusivas de Temporada</h2>
+        <p>¡Descuentos de hasta el 20% en productos seleccionados!</p>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial">
+            <p>“Excelente servicio y productos de calidad. ¡Muy recomendado!”</p>
+            <h4>- Cliente Satisfecho</h4>
+
+            <p>¡Muy recomendado!”</p>
+            <h4>- Cliente Satisfecho</h4>
+        </div>
+        <!-- Agregar más testimonios -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyrigth: lizzy - 2024.</p>
+    </footer>
+    <script src="js/js/home.js"></script>
+    <script src="js/js/carrito.js"></script>
+</body>
+</html>
